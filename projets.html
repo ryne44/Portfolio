@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Rayane HAYA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Style spécifique pour la mise en avant de l'annexe */
+        .annexe-download {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(15, 23, 42, 0.9) 100%);
+            border: 1px solid var(--primary);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .btn-annexe {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--primary);
+            color: #020617;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+            margin-top: 15px;
+        }
+        .btn-annexe:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Rayane<span>HAYA</span></a></div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="presentation.html" class="nav-link">Présentation</a></li>
+                    <li><a href="bts-sio.html" class="nav-link">BTS SIO</a></li>
+                    <li><a href="projets.html" class="nav-link active">Projets</a></li>
+                    <li><a href="stages.html" class="nav-link">Stages</a></li>
+                    <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                    <li><a href="veille.html" class="nav-link">Veille</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <div class="page-header">
+            <div class="container">
+                <h1>Mes Projets</h1>
+                <p class="page-subtitle">Réalisations académiques et professionnelles</p>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            <section class="annexe-download">
+                <i class="fas fa-file-invoice" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 10px;"></i>
+                <h2>Tableau de Synthèse des Réalisations</h2>
+                <p style="color: #94a3b8; max-width: 700px; margin: 0 auto;">
+                    Ce document (Annexe 6.1) récapitule l'ensemble des compétences validées au cours de mes projets et de mes stages durant mon cursus BTS SIO SLAM.
+                </p>
+                <a href="documents/annexe6.1.ods" download class="btn-annexe">
+                    <i class="fas fa-download"></i> Télécharger l'Annexe 6.1 (.ods)
+                </a>
+            </section>
+
+            <section class="page-section">
+                <h2 class="section-title">Mes Réalisations</h2>
+                
+                <div class="projects-grid">
+                    <a href="projet-suivi-stages.html" class="project-card" style="text-decoration: none; color: inherit;">
+                        <div class="project-header">
+                            <h3>Suivi des Stages</h3>
+                            <div class="project-tags">
+                                <span class="tag">PHP/MySQL</span>
+                                <span class="tag">Web Fullstack</span>
+                            </div>
+                        </div>
+                        <p>Application de gestion permettant la soumission des rapports par les étudiants et leur validation par les professeurs. Gestion des droits Admin/Utilisateur.</p>
+                        <div style="margin-top: 15px; color: #00d4ff;">
+                            <i class="fas fa-arrow-right"></i> Consulter la fiche projet
+                        </div>
+                    </a>
+
+                    <a href="projet-forum.html" class="project-card" style="text-decoration: none; color: inherit;">
+                        <div class="project-header">
+                            <h3>Forum Communautaire</h3>
+                            <div class="project-tags">
+                                <span class="tag">PHP/MySQL</span>
+                                <span class="tag">CRUD</span>
+                            </div>
+                        </div>
+                        <p>Plateforme interactive permettant aux utilisateurs de s’inscrire, de poser des questions techniques et d'échanger des solutions via un système de réponses.</p>
+                        <div style="margin-top: 15px; color: #facc15;">
+                            <i class="fas fa-comments"></i> Voir les fonctionnalités
+                        </div>
+                    </a>
+
+                    <a href="projet-cyber-netflix.html" class="project-card" style="text-decoration: none; color: inherit;">
+                        <div class="project-header">
+                            <h3>Simulation Cyber Netflix</h3>
+                            <div class="project-tags">
+                                <span class="tag">Prévention</span>
+                                <span class="tag">Cybersécurité</span>
+                            </div>
+                        </div>
+                        <p>Analyse technique et reproduction d'interface à des fins de sensibilisation. Étude des vecteurs d'attaque par phishing et méthodes de protection.</p>
+                        <div style="margin-top: 15px; color: #e50914;">
+                            <i class="fas fa-user-shield"></i> Étude de cas sécurité
+                        </div>
+                    </a>
+
+                    <a href="projet-bibliotheque.html" class="project-card" style="text-decoration: none; color: inherit;">
+                        <div class="project-header">
+                            <h3>Gestion Bibliothèque</h3>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">WindowBuilder</span>
+                            </div>
+                        </div>
+                        <p>Logiciel desktop avec interface graphique (GUI) permettant la gestion complète du catalogue de livres et des emprunts lecteurs.</p>
+                        <div style="margin-top: 15px; color: #00ffa3;">
+                            <i class="fas fa-arrow-right"></i> Consulter la fiche projet
+                        </div>
+                    </a>
+
+                    <a href="projet-bancaire.html" class="project-card" style="text-decoration: none; color: inherit;">
+                        <div class="project-header">
+                            <h3>Gestion Bancaire</h3>
+                            <div class="project-tags">
+                                <span class="tag">JavaFX</span>
+                                <span class="tag">Scene Builder</span>
+                            </div>
+                        </div>
+                        <p>Simulation bancaire sécurisée permettant aux clients de gérer leurs comptes et d'effectuer des transactions financières via une interface moderne.</p>
+                        <div style="margin-top: 15px; color: #00d4ff;">
+                            <i class="fas fa-arrow-right"></i> Consulter la fiche projet
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span>2026</span> Rayane HAYA. Portfolio BTS SIO SLAM.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

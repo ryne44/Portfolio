@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi des Stages - Rayane HAYA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Styles pour les nouveaux boutons */
+        .project-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .btn-project {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-site {
+            background-color: #00d4ff;
+            color: #020617;
+        }
+        .btn-github {
+            background-color: #24292e;
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .btn-project:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            filter: brightness(1.1);
+        }
+        /* Petit ajustement gallery pour la netteté */
+        .gallery-item img {
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Rayane<span>HAYA</span></a></div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="presentation.html" class="nav-link">Présentation</a></li>
+                    <li><a href="bts-sio.html" class="nav-link">BTS SIO</a></li>
+                    <li><a href="projets.html" class="nav-link active">Projets</a></li>
+                    <li><a href="stages.html" class="nav-link">Stages</a></li>
+                    <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                    <li><a href="veille.html" class="nav-link">Veille</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <div class="page-header">
+            <div class="container">
+                <h1>Suivi des Stages</h1>
+                <p class="page-subtitle">Projet AP1 - BTS SIO SLAM</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <section class="page-section">
+                <div style="margin-bottom: 30px;">
+                    <a href="projets.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Retour aux projets</a>
+                </div>
+
+                <h2 class="section-title">Contexte & Objectifs</h2>
+                <div class="stage-detail-card">
+                    <p><strong>Contexte :</strong> Projet AP1 en BTS SIO, réalisé en autonomie. Première expérience complète en développement web.</p>
+                    <p style="margin-top: 15px;"><strong>Objectif :</strong> Créer un site permettant aux élèves de publier leur compte rendu de stage et aux professeurs de les consulter, commenter et noter.</p>
+                </div>
+
+                <div class="project-actions">
+                    <a href="https://www.siolapie.com/26_HAYAR/AP1_2025/" target="_blank" class="btn-project btn-site">
+                        <i class="fas fa-globe"></i> Voir le site en ligne
+                    </a>
+                    <a href="https://github.com/ryne44/AP1_WEB" target="_blank" class="btn-project btn-github">
+                        <i class="fab fa-github"></i> Code source GitHub
+                    </a>
+                </div>
+            </section>
+
+            <section class="page-section section-dark">
+                <h2 class="section-title">Fonctionnalités Principales</h2>
+                <div class="missions-detail">
+                    <div class="mission-detail-item">
+                        <h3><i class="fas fa-file-alt"></i> Publication de Comptes Rendus</h3>
+                        <p>Les élèves peuvent créer et soumettre leurs comptes rendus de stage avec date et contenu détaillé.</p>
+                    </div>
+                    <div class="mission-detail-item">
+                        <h3><i class="fas fa-eye"></i> Consultation & Notation</h3>
+                        <p>Les professeurs accèdent à la liste complète des comptes rendus pour les consulter, commenter et évaluer.</p>
+                    </div>
+                    <div class="mission-detail-item">
+                        <h3><i class="fas fa-comments"></i> Système de Commentaires</h3>
+                        <p>Échange d'informations entre élèves et professeurs via les commentaires sur chaque compte rendu.</p>
+                    </div>
+                    <div class="mission-detail-item">
+                        <h3><i class="fas fa-user-check"></i> Gestion des Profils</h3>
+                        <p>Système d'authentification avec profils élève et professeur offrant des fonctionnalités différentes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page-section">
+                <h2 class="section-title">Captures d'Écran</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="documents/creation compte rendu eleve.png" alt="Formulaire création compte rendu">
+                        <div class="gallery-caption">Formulaire de création de compte rendu élève</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="documents/modification profil eleve.png" alt="Modification profil élève">
+                        <div class="gallery-caption">Page modification du profil élève</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="documents/liste compte rendu eleve.png" alt="Liste comptes rendus élève">
+                        <div class="gallery-caption">Liste des comptes rendus créés par l'élève</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="documents/page acceuil prof.png" alt="Interface professeur">
+                        <div class="gallery-caption">Page d'accueil interface professeur - Consultation des CR</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page-section section-dark">
+                <h2 class="section-title">Démarche & Méthodologie</h2>
+                <div class="stage-detail-card">
+                    <p>La progression du projet a suivi les fiches du professeur avec une approche structurée :</p>
+                    <ul style="margin-left: 20px; margin-top: 15px; color: #8892b0;">
+                        <li>Création des pages HTML et stylisation CSS</li>
+                        <li>Conception et création de la base de données</li>
+                        <li>Développement des fonctionnalités élèves</li>
+                        <li>Implémentation des fonctionnalités professeurs</li>
+                        <li>Tests et validation du système</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="page-section">
+                <h2 class="section-title">Compétences Acquises</h2>
+                <div class="competences-acquired">
+                    <div class="comp-card">
+                        <h3>Développement Web Complet</h3>
+                        <p>Première expérience complète avec création frontend, backend et intégration de base de données.</p>
+                    </div>
+                    <div class="comp-card">
+                        <h3>Gestion de Base de Données</h3>
+                        <p>Conception de schémas relationnels et implémentation de requêtes SQL pour les données du projet.</p>
+                    </div>
+                    <div class="comp-card">
+                        <h3>Organisation & Résolution de Problèmes</h3>
+                        <p>Capacité à organiser un projet de taille moyenne et résoudre les problèmes techniques rencontrés.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page-section">
+                <div style="text-align: center;">
+                    <a href="projets.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Retour</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year">2025</span> Rayane HAYA. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
